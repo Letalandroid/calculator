@@ -13,7 +13,6 @@ print("""Elija la operación que desea realizar:
 7. Radicación
 8. Sacar el resto de una división.\n""")
 
-
 opcion = int(input("Elija la opción a desear: "))
 
 if opcion == 1:
@@ -24,7 +23,7 @@ if opcion == 1:
     print("\nEl resultado de la suma entre: ", num_uno,
           " + ", num_dos, " es igual a ", resultado, ".")
 
-if opcion == 2:
+elif opcion == 2:
     print("Usted a elegido la opción: N° 2 ⇒ Resta.\n")
     num_uno = int(input("Elija su primer número: "))
     num_dos = int(input("Elija su segundo número: "))
@@ -32,7 +31,7 @@ if opcion == 2:
     print("\nEl resultado de la resta entre: ", num_uno, " - ", num_dos,
           " es igual a ", resultado, ".")
 
-if opcion == 3:
+elif opcion == 3:
     print("Usted a elegido la opción: N° 3 ⇒ Multiplicación.\n")
     num_uno = int(input("Elija su primer número: "))
     num_dos = int(input("Elija su segundo número: "))
@@ -40,7 +39,7 @@ if opcion == 3:
     print("\nEl producto entre: ", num_uno, " multiplicado por ", num_dos,
           " es igual a ", resultado, ".")
 
-if opcion == 4:
+elif opcion == 4:
     print("Usted a elegido la opción: N° 4 ⇒ División.\n")
     num_uno = float(input("Elija su primer número: "))
     num_dos = float(input("Elija su segundo número: "))
@@ -48,7 +47,7 @@ if opcion == 4:
     print("\nEl resultado entre: ", num_uno, " por ", num_dos,
           " es igual a ", resultado, ".")
 
-if opcion == 5:
+elif opcion == 5:
     print("Usted a elegido la opción: N° 5 ⇒ División Entera.\n")
     num_uno = int(input("Elija su primer número: "))
     num_dos = int(input("Elija su segundo número: "))
@@ -56,7 +55,7 @@ if opcion == 5:
     print("\nEl resultado de la división entera entre: ", num_uno, " por ", num_dos,
           " es igual a ", resultado, ".")
 
-if opcion == 6:
+elif opcion == 6:
     print("Usted a elegido la opción: N° 6 ⇒ Potenciación.\n")
     num_uno = int(input("Elija la base de su potencia: "))
     num_dos = int(input("Elija el exponente de su potencia: "))
@@ -64,7 +63,7 @@ if opcion == 6:
     print("\nEl resultado al elevar ", num_uno, " a la ", num_dos,
           " es igual a ", resultado, ".")
 
-if opcion == 7:
+elif opcion == 7:
     import math
     print("Usted ha elegido la opción: Nº 7 ⇒ Radicación.\n")
     num_uno = float(input("Introduzca su número: "))
@@ -81,7 +80,7 @@ if opcion == 7:
               " es igual a ", raiz_opcional)
 
 
-if opcion == 8:
+elif opcion == 8:
     print("Usted a elegido la opción: N° 8: ⇒ Sacar el resto de uma división.\n")
     num_uno = int(input("Elija su primer número: "))
     num_dos = int(input("Elija su segundo número: "))
@@ -95,15 +94,18 @@ if opcion == 8:
         print("""\nLa división es inexacta.
 El resto que sale al dividir """, num_uno, " entre ", num_dos, " es igual a ", resultado, ".")
 
-if opcion == 9:
+elif opcion == 9:
     import math
     pi = math.pi
     print(pi)
-if opcion == 10:
+elif opcion == 10:
     import math
     e = math.e
     print(e)
-if opcion == 11:
+elif opcion == 11:
     import math
     tau = math.tau
     print(tau)
+
+else:
+    print("Usted ha introducido un número inválido.")
