@@ -29,4 +29,7 @@ body {
   margin: auto;
   display: block;
   width: 30px;
+  position: relative;
+  z-index: 15;
+  margin-top: 900px;
 }
